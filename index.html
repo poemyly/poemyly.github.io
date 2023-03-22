@@ -172,7 +172,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-03-22 20:53:18 / 修改时间：22:26:47" itemprop="dateCreated datePublished" datetime="2023-03-22T20:53:18+08:00">2023-03-22</time>
+      <time title="创建时间：2023-03-22 20:53:18 / 修改时间：22:48:41" itemprop="dateCreated datePublished" datetime="2023-03-22T20:53:18+08:00">2023-03-22</time>
     </span>
 
   
@@ -185,8 +185,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>山东大学  计算机科学与技术  学院</p>
-<p>  云计算技术  课程实验报告</p>
+          <div align = "center">山东大学  计算机科学与技术  学院</div>
+
+  <div align = "center">云计算技术   课程实验报告</div>
+
 <table>
 <thead>
 <tr>
@@ -225,12 +227,12 @@
 <thead>
 <tr>
 <th>实验步骤与内容：</th>
-<th>结论分析与体会：</th>
+<th><span style="display:inline-block;width:300px">结论分析与体会：</span></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1.安装Git                                                                                                                                                   Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。windows：到git官网上下载,Download git,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。                    2. 安装nodejs                                                                                                                                        Hexo是基于nodejS编写的，所以需要安装一下nodejs和里面的npm工具,安装完后，打开命令行。     node -v<br />npm -v<br />检查一下有没有安装成功<br />顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。<br />3. 安装hexo<br />前面git和nodejs安装好后，就可以安装hexo了。可以先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。<br />输入命令<br />npm install -g hexo-cli**<br />**依旧用hexo -v查看一下版本，至此就全部安装完了。<br />接下来初始化一下hexo.<br />新建完成后，指定文件夹目录下有：node_modules: 依赖包public ：存放生成的页面 scaffolds：生成文章的一些模板 source：用来存放你的文章themes：主题.<img src="/./yanleyu/1.jpg"><br />使用ctrl+c可以把服务关掉。</td>
-<td></td>
+<td><strong>1.安装Git</strong>                                                                                                                                                   Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。windows：到git官网上下载,Download git,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。                                              <strong>2. 安装nodejs</strong>                                                                                                                                        Hexo是基于nodejS编写的，所以需要安装一下nodejs和里面的npm工具,安装完后，打开命令行。     node -v<br />npm -v<br />检查一下有没有安装成功<br />顺便说一下，windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。<br /><strong>3. 安装hexo</strong><br />前面git和nodejs安装好后，就可以安装hexo了。可以先创建一个文件夹blog，然后cd到这个文件夹下（或者在这个文件夹下直接右键git bash打开）。<br />输入命令<br />npm install -g hexo-cli**<br />**依旧用hexo -v查看一下版本，至此就全部安装完了。<br />接下来初始化一下hexo.<br />新建完成后，指定文件夹目录下有：node_modules: 依赖包public ：存放生成的页面 scaffolds：生成文章的一些模板 source：用来存放你的文章themes：主题.<img src="/2023/03/22/yanleyu/1.jpg"><br />使用ctrl+c可以把服务关掉。<br /><strong>4. GitHub创建个人仓库</strong><br />首先，先要有一个GitHub账户；注册完登录后，在GitHub.com中看到一个New repository，新建仓库。创建一个和用户名相同的仓库，+.github.io，只有这样，将来要部署到GitHub page的时候，才会被识别，也就是xxxx.github.io。点击create repository。<br /><strong>5. 生成SSH添加到GitHub</strong><br/>回到git bash中，git config –global user.name “yourname” git config –global user.email “youremail”这里的yourname输入的GitHub用户名，youremail输入GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。可以用以下两条，检查一下你有没有输对:git config user.name git config user.email然后创建SSH,一路回车。<br/><strong>6. 将hexo部署到GitHub</strong><br />这一步，我们就可以将hexo和GitHub关联起来，也就是将hexo生成的文章部署到GitHub上，打开站点配置文件 _config.yml，翻到最后，修改为YourgithubName就是你的GitHub账户。<br />hexo clean  hexo generate  hexo deploy<br />其中 hexo clean清除了之前生成的东西，也可以不加。hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写hexo deploy 部署文章，可以用hexo d缩写注意deploy时可能要你输入username和password。</td>
+<td><strong>1.hexo介绍</strong> <br />Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。        <br/> <strong>2.最终结果</strong><br /><img src="/./yanleyu/2.png"><strong>3.把主题改成NEXT</strong><br /><img src="/./yanleyu/3.png"><img src="/./yanleyu/4.png"></td>
 </tr>
 </tbody></table>
 
